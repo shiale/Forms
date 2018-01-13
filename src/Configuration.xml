@@ -124,6 +124,7 @@
 			<Subsystem>Справочники</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
 			<Subsystem>Администрирование</Subsystem>
+			<Style>Основной</Style>
 			<CommonPicture>Контрагенты</CommonPicture>
 			<CommonPicture>КонтрагентФЛ1</CommonPicture>
 			<CommonPicture>КонтрагентФЛ2</CommonPicture>
@@ -135,9 +136,26 @@
 			<CommonPicture>Справочники</CommonPicture>
 			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>Администрирование</CommonPicture>
+			<CommonPicture>ФорматыФайлов</CommonPicture>
+			<CommonPicture>Файлы</CommonPicture>
+			<CommonPicture>ЕстьФайлы</CommonPicture>
+			<CommonPicture>НетФайлов</CommonPicture>
+			<CommonPicture>Процент</CommonPicture>
+			<CommonPicture>ДлительнаяОперация</CommonPicture>
+			<CommonPicture>СвойстваОбъектов</CommonPicture>
+			<CommonPicture>ПометкаУдаленияЭлементСправочника</CommonPicture>
 			<FilterCriterion>НоменклатураВДокументах</FilterCriterion>
 			<CommonModule>ОбщийМодуль1</CommonModule>
+			<CommonModule>МодульФоновыеЗаданияУпрИнтерфейс</CommonModule>
+			<CommonModule>ОбработкаТабличныхЧастей</CommonModule>
+			<CommonModule>РаботаСФайлами</CommonModule>
+			<CommonModule>РаботаСФайламиСервер</CommonModule>
+			<CommonModule>МодульФоновыхЗаданий</CommonModule>
 			<Constant>ТолькоЮридическиеЛица</Constant>
+			<Constant>ПутьККаталогуХранилища</Constant>
+			<CommonForm>ФормаПометкиСписка</CommonForm>
+			<CommonForm>ФормаДлительнойОперации</CommonForm>
+			<CommonForm>ФормаПрогресса</CommonForm>
 			<Catalog>ФизическиеЛица</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Организации</Catalog>
@@ -146,8 +164,13 @@
 			<Catalog>Договоры</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>Валюты</Catalog>
+			<Catalog>ХранилищеИзображений</Catalog>
+			<Catalog>ХранилищеФайлов</Catalog>
+			<Catalog>ЗначенияСвойствОбъектов</Catalog>
+			<Document>СчетНаОплатуПокупателю</Document>
 			<Document>ПоступлениеТоваровУслуг</Document>
 			<Document>РеализацияТоваровУслуг</Document>
+			<Document>УстановкаЦенНоменклатуры</Document>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ВидыНоменклатуры</Enum>
 			<Enum>ОтветственныеЛицаОрганизаций</Enum>
@@ -155,8 +178,24 @@
 			<DataProcessor>РабочийСтол</DataProcessor>
 			<DataProcessor>ActiveX</DataProcessor>
 			<DataProcessor>УправлениеОткрытымиФормами</DataProcessor>
+			<DataProcessor>ДанныеФормы</DataProcessor>
+			<DataProcessor>СписокЗначений</DataProcessor>
+			<DataProcessor>ВременноеХранилищеИФоновоеЗадание</DataProcessor>
+			<DataProcessor>УправлениеОткрытымиФормами1</DataProcessor>
+			<DataProcessor>КонсольЗапросов</DataProcessor>
+			<DataProcessor>ОбработкаДанных</DataProcessor>
+			<DataProcessor>ОбработкаДанных2</DataProcessor>
+			<DataProcessor>КонсольЗаданий</DataProcessor>
+			<DataProcessor>ОбработкаДанных3</DataProcessor>
+			<DataProcessor>ПодборНоменклатуры</DataProcessor>
+			<DataProcessor>ЗначенияСвойствОбъекта</DataProcessor>
 			<InformationRegister>ОтветственныеЛицаОрганизаций</InformationRegister>
 			<InformationRegister>КурсыВалют</InformationRegister>
+			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
+			<InformationRegister>ЗначенияСвойствОбъектов</InformationRegister>
+			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
+			<ChartOfCharacteristicTypes>СвойстваОбъектов</ChartOfCharacteristicTypes>
+			<ChartOfCharacteristicTypes>НазначенияСвойствОбъектов</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -17,7 +17,12 @@
 				<xr:Ref>CommonPicture.Администрирование</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДанныеФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СписокЗначений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВременноеХранилищеИФоновоеЗадание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b295a941-b1a4-4f3e-b733-11a76f75c372</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>НастройкиПрограммы</Subsystem>

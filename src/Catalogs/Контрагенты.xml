@@ -56,6 +56,7 @@
 			<InputByString>
 				<xr:Field>Catalog.Контрагенты.StandardAttribute.Description</xr:Field>
 				<xr:Field>Catalog.Контрагенты.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Контрагенты.Attribute.ИНН</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -162,7 +163,7 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
@@ -283,6 +284,45 @@
 							<v8:content>Документ, удостоверяющий личность физического лица</v8:content>
 						</v8:item>
 					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="36754498-0fcf-4244-a171-c159d99601be">
+				<Properties>
+					<Name>ОсновнойДоговор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной договор</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Договоры</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>

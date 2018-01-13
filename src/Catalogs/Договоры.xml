@@ -52,7 +52,7 @@
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<Characteristics/>
 			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
-			<EditType>InDialog</EditType>
+			<EditType>BothWays</EditType>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
