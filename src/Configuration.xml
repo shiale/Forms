@@ -151,6 +151,8 @@
 			<CommonModule>РаботаСФайлами</CommonModule>
 			<CommonModule>РаботаСФайламиСервер</CommonModule>
 			<CommonModule>МодульФоновыхЗаданий</CommonModule>
+			<ScheduledJob>ОбновлениеИндексаППД</ScheduledJob>
+			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
 			<Constant>ТолькоЮридическиеЛица</Constant>
 			<Constant>ПутьККаталогуХранилища</Constant>
 			<CommonForm>ФормаПометкиСписка</CommonForm>
