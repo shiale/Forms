@@ -71,17 +71,6 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Description</DataPath>
-					<DefaultItem>true</DefaultItem>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
-				</LabelField>
-				<LabelField name="ИНН" id="28">
-					<DataPath>Список.ИНН</DataPath>
-					<ContextMenu name="ИННКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="30"/>
-				</LabelField>
 				<LabelField name="Код" id="19">
 					<DataPath>Список.Code</DataPath>
 					<UserVisible>
@@ -89,6 +78,28 @@
 					</UserVisible>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="Наименование" id="16">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<PictureField name="Картинка" id="31">
+					<DataPath>Список.ИндексКартинкиСтрок</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>1</Width>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СправочникКонтрагенты</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="КартинкаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="33"/>
+				</PictureField>
+				<LabelField name="ИНН" id="28">
+					<DataPath>Список.ИНН</DataPath>
+					<ContextMenu name="ИННКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="КПП" id="25">
 					<DataPath>Список.КПП</DataPath>
@@ -145,7 +156,18 @@
 		КОГДА СправочникКонтрагенты.ПометкаУдаления
 			ТОГДА 1
 		ИНАЧЕ 0
-	КОНЕЦ КАК ИндексКартинки
+	КОНЕЦ КАК ИндексКартинки,
+	ВЫБОР
+		КОГДА СправочникКонтрагенты.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+			ТОГДА 2
+		КОГДА СправочникКонтрагенты.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+			ТОГДА 4
+		ИНАЧЕ 10
+	КОНЕЦ + ВЫБОР
+		КОГДА СправочникКонтрагенты.ПометкаУдаления
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексКартинкиСтрок
 ИЗ
 	Справочник.Контрагенты КАК СправочникКонтрагенты</QueryText>
 				<MainTable>Catalog.Контрагенты</MainTable>

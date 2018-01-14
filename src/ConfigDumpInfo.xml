@@ -23,8 +23,8 @@
 		<Metadata name="Catalog.Контрагенты.Form.ФормаДляЮрЛица.Form" id="b83f5892-65db-45b1-8825-395e7ee6d1b9.0" configVersion="44eb0745b319494582673fc33137955700000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка" id="d7349524-8b4b-4d78-9910-422528e26a65" configVersion="95be97c35af1ba42823cfbf7e5edc01f00000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка.Form" id="d7349524-8b4b-4d78-9910-422528e26a65.0" configVersion="c8f464030b0da4488c9fdc2b9e7671da00000000"/>
-		<Metadata name="Catalog.Контрагенты.Form.ФормаСпискаУправляемая" id="51e4b408-2d97-48ea-bbce-3c9462fcde66" configVersion="05d004dc7582154d89e34398b2fb5da000000000"/>
-		<Metadata name="Catalog.Контрагенты.Form.ФормаСпискаУправляемая.Form" id="51e4b408-2d97-48ea-bbce-3c9462fcde66.0" configVersion="4c7c1319d80a7b49808067825810700e00000000"/>
+		<Metadata name="Catalog.Контрагенты.Form.ФормаСпискаУправляемая" id="51e4b408-2d97-48ea-bbce-3c9462fcde66" configVersion="39c63a20972ebd469f79088df01023ff00000000"/>
+		<Metadata name="Catalog.Контрагенты.Form.ФормаСпискаУправляемая.Form" id="51e4b408-2d97-48ea-bbce-3c9462fcde66.0" configVersion="a9a0771a5e8c41489eeb7a8c82b9738200000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента" id="bd02a63e-7142-4fac-b170-6093bd444499" configVersion="ac023cac5cbe9748a9123f8ea075747300000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента.Form" id="bd02a63e-7142-4fac-b170-6093bd444499.0" configVersion="dfd04f74bfe0c2499ee6175ccda3793a00000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлементаУправляемая" id="29732b8b-89fe-4710-bd90-209120d01634" configVersion="9ab904b19918d549b43923ca3438c9a600000000"/>
