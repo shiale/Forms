@@ -11,7 +11,7 @@
 		<Metadata name="Catalog.Договоры.Form.ФормаСписка" id="508b5125-d4c2-4594-aff2-3d00fa22f732" configVersion="4887cc83703a094aab731528a2005ceb00000000"/>
 		<Metadata name="Catalog.Договоры.Form.ФормаСписка.Form" id="508b5125-d4c2-4594-aff2-3d00fa22f732.0" configVersion="33be9b496039bc4991a4787ca01fc38100000000"/>
 		<Metadata name="Catalog.ЗначенияСвойствОбъектов" id="930e3562-ccbb-49f5-bf3d-7ad71b03f4e8" configVersion="a1bbcce08337dd449673d869d33949f800000000"/>
-		<Metadata name="Catalog.Контрагенты" id="32a7326a-5373-4df7-85f1-fb1de9bc640f" configVersion="3344ab84a22b6a47857368116b1efec300000000">
+		<Metadata name="Catalog.Контрагенты" id="32a7326a-5373-4df7-85f1-fb1de9bc640f" configVersion="52042b7e0ed31348b9fc375fa331e8ad00000000">
 			<Metadata name="Catalog.Контрагенты.Attribute.ИНН" id="1fa50dad-b0a9-438e-9f48-fa67897cdfcf"/>
 			<Metadata name="Catalog.Контрагенты.Attribute.ДокументУдостоверяющийЛичность" id="2d036676-f17a-410f-b94a-3ea2a1aedf7f"/>
 			<Metadata name="Catalog.Контрагенты.Attribute.ЮридическоеФизическоеЛицо" id="31b670b3-009f-44f9-8e90-a3cd829a1b4d"/>
@@ -23,6 +23,8 @@
 		<Metadata name="Catalog.Контрагенты.Form.ФормаДляЮрЛица.Form" id="b83f5892-65db-45b1-8825-395e7ee6d1b9.0" configVersion="44eb0745b319494582673fc33137955700000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка" id="d7349524-8b4b-4d78-9910-422528e26a65" configVersion="95be97c35af1ba42823cfbf7e5edc01f00000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаСписка.Form" id="d7349524-8b4b-4d78-9910-422528e26a65.0" configVersion="c8f464030b0da4488c9fdc2b9e7671da00000000"/>
+		<Metadata name="Catalog.Контрагенты.Form.ФормаСпискаУправляемая" id="51e4b408-2d97-48ea-bbce-3c9462fcde66" configVersion="05d004dc7582154d89e34398b2fb5da000000000"/>
+		<Metadata name="Catalog.Контрагенты.Form.ФормаСпискаУправляемая.Form" id="51e4b408-2d97-48ea-bbce-3c9462fcde66.0" configVersion="4c7c1319d80a7b49808067825810700e00000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента" id="bd02a63e-7142-4fac-b170-6093bd444499" configVersion="ac023cac5cbe9748a9123f8ea075747300000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлемента.Form" id="bd02a63e-7142-4fac-b170-6093bd444499.0" configVersion="dfd04f74bfe0c2499ee6175ccda3793a00000000"/>
 		<Metadata name="Catalog.Контрагенты.Form.ФормаЭлементаУправляемая" id="29732b8b-89fe-4710-bd90-209120d01634" configVersion="9ab904b19918d549b43923ca3438c9a600000000"/>

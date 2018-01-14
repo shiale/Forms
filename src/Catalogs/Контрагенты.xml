@@ -63,7 +63,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Контрагенты.Form.ФормаЭлементаУправляемая</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.Контрагенты.Form.ФормаСпискаУправляемая</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm>Catalog.Контрагенты.Form.ФормаЭлемента</AuxiliaryObjectForm>
@@ -349,6 +349,7 @@
 			<Form>ФормаДляЮрЛица</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлементаУправляемая</Form>
+			<Form>ФормаСпискаУправляемая</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
