@@ -144,6 +144,9 @@
 			<CommonPicture>ДлительнаяОперация</CommonPicture>
 			<CommonPicture>СвойстваОбъектов</CommonPicture>
 			<CommonPicture>ПометкаУдаленияЭлементСправочника</CommonPicture>
+			<CommonPicture>СправочникКонтрагенты</CommonPicture>
+			<Role>ПолныеПрава</Role>
+			<Role>Менеджер</Role>
 			<FilterCriterion>НоменклатураВДокументах</FilterCriterion>
 			<CommonModule>ОбщийМодуль1</CommonModule>
 			<CommonModule>МодульФоновыеЗаданияУпрИнтерфейс</CommonModule>
