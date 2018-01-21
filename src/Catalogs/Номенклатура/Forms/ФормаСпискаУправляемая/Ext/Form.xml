@@ -3,6 +3,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -199,19 +200,32 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникНоменклатура.Ссылка,
+	СправочникНоменклатура.ПометкаУдаления,
+	СправочникНоменклатура.Родитель,
+	СправочникНоменклатура.ЭтоГруппа,
+	СправочникНоменклатура.Код,
+	СправочникНоменклатура.Наименование,
+	СправочникНоменклатура.Артикул,
+	СправочникНоменклатура.ВидНоменклатуры,
+	СправочникНоменклатура.ОсновнойПоставщик,
+	СправочникНоменклатура.Весовой,
+	СправочникНоменклатура.Изображение,
+	СправочникНоменклатура.Предопределенный,
+	СправочникНоменклатура.ИмяПредопределенныхДанных
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура
+ГДЕ
+	СправочникНоменклатура.Родитель = &amp;Родитель
+	И НЕ СправочникНоменклатура.ЭтоГруппа</QueryText>
 				<MainTable>Catalog.Номенклатура</MainTable>
 				<ListSettings>
 					<dcsset:filter>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">ЭтоГруппа</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
-							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>6932ca2c-29d6-483c-bd2a-d8643b82fed9</dcsset:userSettingID>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
