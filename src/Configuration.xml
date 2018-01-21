@@ -158,6 +158,7 @@
 			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
 			<Constant>ТолькоЮридическиеЛица</Constant>
 			<Constant>ПутьККаталогуХранилища</Constant>
+			<Constant>ОсновнойСклад</Constant>
 			<CommonForm>ФормаПометкиСписка</CommonForm>
 			<CommonForm>ФормаДлительнойОперации</CommonForm>
 			<CommonForm>ФормаПрогресса</CommonForm>
