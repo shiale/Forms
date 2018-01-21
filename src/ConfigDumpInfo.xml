@@ -42,8 +42,8 @@
 		<Metadata name="Catalog.Номенклатура.Form.ФормаВыбора.Form" id="6a15a7bf-0be1-4262-b6fc-660842c5ca1b.0" configVersion="085dd94a95c15144b4bc9ebbb41c25f600000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка" id="59f89908-05df-4f8c-8a77-cca3e24b176b" configVersion="c316f7cdbd7c8b4594d32dbd818c39ab00000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаСписка.Form" id="59f89908-05df-4f8c-8a77-cca3e24b176b.0" configVersion="2f0a74e532d2b14c822f730a1ef937a500000000"/>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаСпискаУправляемая" id="2d15c8cc-fe7b-40a2-a5b2-b4926680b1b3" configVersion="5a744761c76979418ff42373b46687a600000000"/>
-		<Metadata name="Catalog.Номенклатура.Form.ФормаСпискаУправляемая.Form" id="2d15c8cc-fe7b-40a2-a5b2-b4926680b1b3.0" configVersion="17e0fca9365091438de04222c370417400000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСпискаУправляемая" id="2d15c8cc-fe7b-40a2-a5b2-b4926680b1b3" configVersion="c0c31a14d7052c47860fb9186051432a00000000"/>
+		<Metadata name="Catalog.Номенклатура.Form.ФормаСпискаУправляемая.Form" id="2d15c8cc-fe7b-40a2-a5b2-b4926680b1b3.0" configVersion="a9b78a6c728d884eb7e588e43f30553000000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента" id="2f03ef22-6e4f-4d08-840a-321c758a13d1" configVersion="6b204395def15e45989af181201b92ca00000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ФормаЭлемента.Form" id="2f03ef22-6e4f-4d08-840a-321c758a13d1.0" configVersion="07facf15b057d4468c33e5733880b0de00000000"/>
 		<Metadata name="Catalog.Организации" id="76b9a4dc-72af-4689-94ec-55282c74cc8b" configVersion="35ff7d31045119439768f0b444412c6300000000"/>
