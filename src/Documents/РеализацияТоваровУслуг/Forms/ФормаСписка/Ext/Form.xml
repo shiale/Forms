@@ -129,7 +129,7 @@
 							<dcsset:use>false</dcsset:use>
 							<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
