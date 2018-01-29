@@ -109,27 +109,38 @@
 					<ContextMenu name="КартинкаКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="33"/>
 				</PictureField>
-				<LabelField name="ИНН" id="28">
-					<DataPath>Список.ИНН</DataPath>
-					<ContextMenu name="ИННКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="30"/>
-				</LabelField>
-				<LabelField name="КПП" id="25">
-					<DataPath>Список.КПП</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="КППКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="КППРасширеннаяПодсказка" id="27"/>
-				</LabelField>
-				<LabelField name="ОГРН" id="22">
-					<DataPath>Список.ОГРН</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="ОГРНКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="24"/>
-				</LabelField>
+				<ColumnGroup name="Группа1" id="38">
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+					<ChildItems>
+						<LabelField name="ОГРН" id="22">
+							<DataPath>Список.ОГРН</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="ОГРНКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ОГРНРасширеннаяПодсказка" id="24"/>
+						</LabelField>
+						<ColumnGroup name="Группа2" id="40">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="41"/>
+							<ChildItems>
+								<LabelField name="ИНН" id="28">
+									<DataPath>Список.ИНН</DataPath>
+									<ContextMenu name="ИННКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+								<LabelField name="КПП" id="25">
+									<DataPath>Список.КПП</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="КППКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="КППРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -197,6 +208,38 @@
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ИНН</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>КПП</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>ОГРН</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЭтоГруппа</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Видимость</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>Отображать</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
