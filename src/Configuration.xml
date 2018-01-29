@@ -200,6 +200,7 @@
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ЗначенияСвойствОбъектов</InformationRegister>
 			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
+			<AccumulationRegister>Взаиморасчеты</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СвойстваОбъектов</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>НазначенияСвойствОбъектов</ChartOfCharacteristicTypes>
 		</ChildObjects>

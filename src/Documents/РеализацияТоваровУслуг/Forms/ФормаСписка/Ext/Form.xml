@@ -9,7 +9,6 @@
 			</Button>
 			<Button name="ФормаОтобратьПоОсновномуСкладу" id="34">
 				<Type>CommandBarButton</Type>
-				<Check>true</Check>
 				<CommandName>Form.Command.ОтобратьПоОсновномуСкладу</CommandName>
 				<ExtendedTooltip name="ФормаОтобратьПоОсновномуСкладуРасширеннаяПодсказка" id="35"/>
 			</Button>
@@ -125,17 +124,28 @@
 				<Field>Список.Ref</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументРеализацияТоваровУслуг.Ссылка,
+	ДокументРеализацияТоваровУслуг.ПометкаУдаления,
+	ДокументРеализацияТоваровУслуг.Номер,
+	ДокументРеализацияТоваровУслуг.Дата,
+	ДокументРеализацияТоваровУслуг.Проведен,
+	ДокументРеализацияТоваровУслуг.Контрагент,
+	ДокументРеализацияТоваровУслуг.Договор,
+	ДокументРеализацияТоваровУслуг.Менеджер,
+	ДокументРеализацияТоваровУслуг.Склад,
+	ДокументРеализацияТоваровУслуг.СуммаДокумента,
+	ДокументРеализацияТоваровУслуг.ТипЦен,
+	ДокументРеализацияТоваровУслуг.Товары,
+	ДокументРеализацияТоваровУслуг.Услуги,
+	ДокументРеализацияТоваровУслуг.МоментВремени
+ИЗ
+	Документ.РеализацияТоваровУслуг КАК ДокументРеализацияТоваровУслуг</QueryText>
 				<MainTable>Document.РеализацияТоваровУслуг</MainTable>
 				<ListSettings>
 					<dcsset:filter>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:use>false</dcsset:use>
-							<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:viewMode>Normal</dcsset:viewMode>
-						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
