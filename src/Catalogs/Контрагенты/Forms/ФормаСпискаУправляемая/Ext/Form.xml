@@ -7,6 +7,11 @@
 				<CommandName>Form.Command.ВыделитьДолжников</CommandName>
 				<ExtendedTooltip name="ФормаВыделитьДолжниковРасширеннаяПодсказка" id="35"/>
 			</Button>
+			<Button name="ФормаТест" id="36">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Тест</CommandName>
+				<ExtendedTooltip name="ФормаТестРасширеннаяПодсказка" id="37"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
@@ -179,8 +184,8 @@
 	ЕСТЬNULL(ВзаиморасчетыОстатки.СуммаОстаток, 0) КАК Долг
 ИЗ
 	Справочник.Контрагенты КАК СправочникКонтрагенты
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.Взаиморасчеты.Остатки КАК ВзаиморасчетыОстатки
-		ПО ВзаиморасчетыОстатки.Контрагент = СправочникКонтрагенты.Ссылка</QueryText>
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.Взаиморасчеты.Остатки КАК ВзаиморасчетыОстатки
+		ПО (ВзаиморасчетыОстатки.Контрагент = СправочникКонтрагенты.Ссылка)}</QueryText>
 				<MainTable>Catalog.Контрагенты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -192,33 +197,6 @@
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
-						<dcsset:item>
-							<dcsset:selection>
-								<dcsset:item>
-									<dcsset:field>Наименование</dcsset:field>
-								</dcsset:item>
-							</dcsset:selection>
-							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">Долг</dcsset:left>
-									<dcsset:comparisonType>Greater</dcsset:comparisonType>
-									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
-								</dcsset:item>
-							</dcsset:filter>
-							<dcsset:appearance>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>ЦветТекста</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
-								</dcscor:item>
-							</dcsset:appearance>
-							<dcsset:presentation xsi:type="v8:LocalStringType">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Выделить должников</v8:content>
-								</v8:item>
-							</dcsset:presentation>
-							<dcsset:userSettingID>11a870e0-d67a-4f77-92be-c40232cef8d8</dcsset:userSettingID>
-						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
@@ -243,6 +221,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыделитьДолжников</Action>
+		</Command>
+		<Command name="Тест" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест</Action>
 		</Command>
 	</Commands>
 </Form>
